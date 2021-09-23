@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+:root{
+    --strong-cyan:hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan1: hsl(186, 14%, 43%);
+    --Dark-grayish-cyan2: hsl(184, 14%, 56%);
+    --Light-grayish-cyan1: hsl(185, 41%, 84%);
+    --Light-grayish-cyan2: rgb(243,248,251);
+    --White: hsl(0, 0%, 100%);
+    --cyan:rgb(38,194,173);
+    --orange:rgb(253,209,187);
+}
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    min-height: 100vh;
+
+}
+body{
+    background-color: var(--Light-grayish-cyan1);
+    width: 100%;
+    
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.main-page{
+}
+.main-content{
+    margin-top: 10%;
+
+}
+.title{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+}
+.right-content{
+    margin: 30px;
+    width: 300px;
+    height: fit-content;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 10px;
+    display: block;
+    
+}
+.left-content{
+    padding: 40px;
+    padding-right: 0;
+    width: 280px;
+}
+
+.tip-amount,.total{
+    text-align: left;
+    margin-top: 12%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.total-label{
+    width: 77px;
+}
+.tip-amount-label,.total-amount{
+}
+
+.tip-amount-label label,.total-label label{
+    color: white;
+    font-size: 0.8em;
+    width: 100%;
+    
+}
+.per-person{
+    color: var(--Dark-grayish-cyan2);
+}
+.tip-amount-number label,.total-amount label{
+    color: var(--cyan);
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: monospace;
+}
+.reset-button{
+    margin-top: 35%;
+    margin-bottom: 10%;
+}
+.reset-button{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.reset-button button{
+    width: 100%;
+    padding: 9px ;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--Very-dark-cyan);
+    background-color: var(--cyan);
+    border: none;
+    border-radius: 5px;
+    
+}
+.bill,.select-tip-label,.number-of-people-header  {
+    margin-bottom: 3%;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: var(--Dark-grayish-cyan1);
+    text-align: left;
+}
+
+.bill-amount,.number-of-people-number{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    justify-self: center;
+    background-color: var(--Light-grayish-cyan2);
+    border-radius: 3px;
+    padding: 5px 20px 5px 15px;
+    margin-bottom: 10%;
+}
+.number-of-people-number{
+    margin-bottom: unset;
+}
+
+.dollar-image img,.number-of-people img{
+    
+   height: 13px;
+}
+.bill-amount-number input{
+    font-family: monospace;
+    font-size: 1.4em;
+    color: var(--Very-dark-cyan);
+    font-weight: bold;
+    
+}
+.bill-amount-number input,.number-of-people-amount input{
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    
+    
+}
+.bill-amount-number input,.bill-amount-number input::placeholder,.number-of-people-amount input,.number-of-people-amount input::placeholder{
+    font-family: monospace;
+    font-size: 1.4em;
+    color: var(--Very-dark-cyan);
+    font-weight: bold;
+}
+.select-tip-label{
+    margin-top: 10%;
+}
+.tip{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 10%;
+    
+}
+
+
+.custom{
+    height: 100%;
+}
+.custom input{
+
+    width: 95%;
+    height: 95%;
+    border: none;
+    
+    background-color: var(--Light-grayish-cyan2);
+    border-radius: 4px;
+}
+.custom input::placeholder{
+    font-family: monospace;
+    color: var(--Dark-grayish-cyan1);
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+.tip button{
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: var(--White);
+    font-family: monospace;
+    background-color: var(--Very-dark-cyan);
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.number-of-people-header{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+button,input{
+    cursor: pointer;
+}
+.cant-be-zero label{
+    display: none;
+    
+}
+.number-of-people-number input,.bill-amount-number input{
+    outline: none;
+    caret-color: transparent;
+}
+.number-of-people-number{
+    border: 2px var(--orange) solid;
+}
+
+
+/*
+orange border and display cant be zero if value is zero
+custom must be a button that shows a prompt
+output virgules*/
+
+
+
